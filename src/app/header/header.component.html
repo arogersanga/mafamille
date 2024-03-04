@@ -1,0 +1,91 @@
+<!-- Mob header -->
+<div class="mob-header">
+    <div class="mob-h-left">
+        <a class="navbar-brand" href="javascript:">MukAnt.
+        </a>
+    </div>
+    <div class="mob-h-right" (clickOutside)="onClickedOutside($event)">
+        <button class="toggler-menu" [ngClass]="{'open': sidebarOpen}" (click)="toggleMenu()">
+            <span></span>
+        </button>
+    </div>
+</div>
+<!-- End -->
+<!-- Header Top -->
+<div class="header-left-fixed one-page-nav" [ngClass]="{'menu-open menu-open-desk' : sidebarOpen}">
+    <!-- Brand -->
+    <div class="logo">
+        <a class="navbar-brand" href="javascript:">MukAnt.
+        </a>
+    </div>
+    <!-- / -->
+    <ul class="main-menu">
+        <li>
+            <a class="menu-item" spyOn="home" activeClass="active" href="#home" (click)="fullPageScroll('home')">
+                Home
+            </a>
+        </li>
+        <!--      <li>
+            <a class="menu-item" spyOn="about" activeClass="active" href="#about" (click)="fullPageScroll('about')"> 
+                About
+            </a>
+        </li> -->
+        <li>
+            <a class="menu-item" spyOn="famille" activeClass="active" href="#famille" (click)="fullPageScroll('famille')"> 
+                Famille
+            </a>
+        </li>
+        <!--         <li>
+            <a class="menu-item" spyOn="services" activeClass="active" href="#services" (click)="fullPageScroll('services')">
+                Services
+            </a>
+        </li> -->
+        <li>
+            <a class="menu-item" spyOn="membres" activeClass="active" href="#membres" (click)="fullPageScroll('membres')">
+                Membres
+            </a>
+        </li>
+
+        <li>
+            <a class="menu-item" spyOn="medias" activeClass="active" href="#medias" (click)="fullPageScroll('medias')">
+                Médias
+            </a>
+        </li>
+        <!--     <li>
+            <a class="menu-item" spyOn="work" activeClass="active" href="#work" (click)="fullPageScroll('work')">
+                Work
+            </a>
+        </li> -->
+
+        <!--     <li>
+            <a class="menu-item" spyOn="blog" activeClass="active" href="#blog" (click)="fullPageScroll('blog')">
+                Blog
+            </a>
+        </li> -->
+        <li>
+            <a class="menu-item" spyOn="livres" activeClass="active" href="#livres" (click)="fullPageScroll('livres')">
+                Livres
+            </a>
+        </li>
+        <li>
+            <a class="menu-item" spyOn="contact" activeClass="active" href="#contact" (click)="fullPageScroll('contact')">
+                Contact
+            </a>
+        </li>
+    </ul>
+    <ul class="nav social-link">
+        <li>
+            <a href="javascript:"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+            <a href="javascript:"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+            <a href="javascript:"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+            <a href="javascript:"><i class="fab fa-pinterest"></i></a>
+        </li>
+    </ul>
+</div>
+<!-- End Header Top -->
