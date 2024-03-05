@@ -6,6 +6,7 @@ import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RouterModule } from '@angular/router';
+import { GoogleMapsModule } from '@angular/google-maps'
 import { HomeComponent } from './main/home/home.component';
 import { AboutComponent } from './main/about/about.component';
 import { ExperienceComponent } from './main/experience/experience.component';
@@ -55,7 +56,8 @@ import { MembresComponent } from './main/membres/membres.component';
     BrowserAnimationsModule,
     CarouselModule,
     ScrollSpyModule,
-    NgClickOutsideDirective
+    NgClickOutsideDirective,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
